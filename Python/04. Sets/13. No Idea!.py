@@ -1,0 +1,5 @@
+n, m = map(int, input().split())
+n_elements_array = map(int, input().split())
+A_elements = set(map(int, input().split()))
+B_elements = set(map(int, input().split()))
+print(sum((i in A_elements) - (i in B_elements) for i in n_elements_array))
